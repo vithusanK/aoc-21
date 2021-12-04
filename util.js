@@ -1,5 +1,5 @@
 const axios = require("axios");
-const { cookie } = require("./config.json");
+const { cookie, filePath } = require("./config.json");
 const fs = require('fs');
 
 function getDayInput(day) {
@@ -23,7 +23,7 @@ function getDayInput(day) {
 
   axios.default.get(`https://adventofcode.com/2021/day/${day}/input`, config)
     .then(async function (response) {
-      await fs.writeFileSync(`E:/Users/Vithusan/source/repos/aoc-21/day${day}/day${day}.txt`, response.data);
+      await fs.writeFileSync(`${filePath}/day${day}/day${day}.txt`, response.data);
     })
     .catch(function (error) {
       console.log(error);
