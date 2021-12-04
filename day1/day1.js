@@ -153,6 +153,7 @@ input = [
   7952, 7954, 7931, 7935, 7936, 7900, 7915, 7920, 7911, 7914, 7925, 7937, 7942,
   7974, 7976, 7989, 7993, 8006, 8007, 8010, 8016, 8020, 8026,
 ];
+const {getDayInput} = require("../util");
 
 function part1() {
   var ans = 0;
@@ -176,5 +177,6 @@ function part2() {
   console.log(ans);
 }
 
+getDayInput(1);
 part1();
 part2();

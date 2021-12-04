@@ -2000,6 +2000,7 @@ var input = [
     "forward",
     5,
   ];
+  const {getDayInput} = require("../util");
   
   function part1(input) {
     var hor = 0;
@@ -2039,6 +2040,6 @@ var input = [
     }
     console.log(hor * depth);
   }
-  
+  getDayInput(2);
   part1(input);
   part2(input);

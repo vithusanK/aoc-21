@@ -1000,7 +1000,9 @@ let input = [
     "100011101011",
     "001000110100",
   ];
-  
+  const { getDayInput } = require("../util");
+
+  getDayInput(3);
   function part1() {
     var gamma = "";
     let length = input[0].length;
